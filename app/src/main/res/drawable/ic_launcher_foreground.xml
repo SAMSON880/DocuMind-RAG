@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Document base card -->
+    <path
+        android:fillColor="#00B4D8"
+        android:pathData="M32,24 L62,24 L76,38 L76,84 L32,84 Z" />
+    <!-- Folded corner -->
+    <path
+        android:fillColor="#90E0EF"
+        android:pathData="M62,24 L62,38 L76,38 Z" />
+    <!-- Document text & vector lines -->
+    <path
+        android:fillColor="#0B132B"
+        android:pathData="M40,45 L66,45 L66,50 L40,50 Z M40,56 L66,56 L66,61 L40,61 Z M40,67 L56,67 L56,72 L40,72 Z" />
+    <!-- Glowing search node badge -->
+    <path
+        android:fillColor="#06D6A0"
+        android:pathData="M66,62 A12,12 0 1,1 65.9,62 Z" />
+    <path
+        android:fillColor="#0B132B"
+        android:pathData="M66,68 A6,6 0 1,1 65.9,68 Z" />
+</vector>

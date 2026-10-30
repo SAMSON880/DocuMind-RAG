@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="360dp"
+    android:height="140dp"
+    android:viewportWidth="360"
+    android:viewportHeight="140">
+    <!-- Background rounded card -->
+    <path android:pathData="M0,0h360v140h-360z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="360"
+                android:endY="140"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#0B132B" />
+                <item android:offset="0.5" android:color="#1C2541" />
+                <item android:offset="1.0" android:color="#0F3460" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Decorative grid lines -->
+    <path
+        android:strokeColor="#1FFFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M0,35 L360,35 M0,70 L360,70 M0,105 L360,105 M72,0 L72,140 M144,0 L144,140 M216,0 L216,140 M288,0 L288,140" />
+    <!-- Node 1: PDF Document -->
+    <path
+        android:fillColor="#00B4D8"
+        android:pathData="M28,36 L64,36 L74,46 L74,104 L28,104 Z" />
+    <path
+        android:fillColor="#90E0EF"
+        android:pathData="M64,36 L64,46 L74,46 Z" />
+    <path
+        android:fillColor="#0B132B"
+        android:pathData="M36,56 L66,56 L66,61 L36,61 Z M36,68 L66,68 L66,73 L36,73 Z M36,80 L54,80 L54,85 L36,85 Z" />
+    <!-- Connector 1 -> 2 -->
+    <path
+        android:strokeColor="#00B4D8"
+        android:strokeWidth="3"
+        android:pathData="M78,70 L114,70" />
+    <!-- Node 2: Overlapping Chunks -->
+    <path
+        android:fillColor="#3A86FF"
+        android:pathData="M116,38 L164,38 L164,64 L116,64 Z" />
+    <path
+        android:fillColor="#00B4D8"
+        android:pathData="M124,57 L172,57 L172,83 L124,83 Z" />
+    <path
+        android:fillColor="#06D6A0"
+        android:pathData="M132,76 L180,76 L180,102 L132,102 Z" />
+    <!-- Connector 2 -> 3 -->
+    <path
+        android:strokeColor="#06D6A0"
+        android:strokeWidth="3"
+        android:pathData="M184,70 L218,70" />
+    <!-- Node 3: FAISS Vector Sphere -->
+    <path
+        android:fillColor="#1C2541"
+        android:strokeColor="#06D6A0"
+        android:strokeWidth="3"
+        android:pathData="M246,70 m-26,0 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0" />
+    <path
+        android:fillColor="#06D6A0"
+        android:pathData="M236,60 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 M256,58 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 M246,80 m-6,0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0" />
+    <path
+        android:strokeColor="#90E0EF"
+        android:strokeWidth="1.5"
+        android:pathData="M236,60 L256,58 L246,80 Z" />
+    <!-- Connector 3 -> 4 -->
+    <path
+        android:strokeColor="#FFD166"
+        android:strokeWidth="3"
+        android:pathData="M274,70 L302,70" />
+    <!-- Node 4: Grounded Ollama Answer Badge -->
+    <path
+        android:fillColor="#FFD166"
+        android:pathData="M304,42 L344,42 L344,98 L304,98 Z" />
+    <path
+        android:fillColor="#0B132B"
+        android:pathData="M312,54 L336,54 L336,60 L312,60 Z M312,67 L336,67 L336,73 L312,73 Z M312,80 L328,80 L328,86 L312,86 Z" />
+</vector>

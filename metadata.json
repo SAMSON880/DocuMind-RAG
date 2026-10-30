@@ -1,0 +1,6 @@
+{
+  "name": "DocuMind",
+  "description": "Smart Document Q&A Assistant powered by Local RAG, PDF Page Chunking, Vector Search, and Local Ollama LLM Inference.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DocuMind</string>
+    <string name="app_subtitle">Local RAG + Gemini Chat, Search &amp; Image Studio</string>
+    <string name="nav_chat">Local RAG</string>
+    <string name="nav_documents">PDFs</string>
+    <string name="nav_gemini">Gemini AI</string>
+    <string name="nav_images">Images</string>
+    <string name="nav_pipeline">Lab &amp; Mac</string>
+    <string name="upload_pdf_button">Upload PDF File</string>
+    <string name="load_sample_pdfs">Restore Sample PDFs</string>
+    <string name="clear_chat">Clear Chat</string>
+    <string name="toggle_theme">Toggle Light/Dark Theme</string>
+    <string name="ask_placeholder">Ask a question grounded in your PDFs…</string>
+    <string name="send_question">Send Question</string>
+    <string name="not_found_title">Information Not Found in Uploaded Documents</string>
+    <string name="ollama_settings_title">Local Ollama &amp; RAG Hyperparameters</string>
+</resources>

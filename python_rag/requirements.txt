@@ -1,0 +1,11 @@
+# DocuMind – Smart Document Q&A Assistant (100% Local Mac RAG Stack)
+# Compatible with Python 3.10 - 3.12 on macOS (Apple Silicon M1/M2/M3/M4 & Intel)
+
+streamlit>=1.38.0
+PyMuPDF>=1.24.9
+sentence-transformers>=3.0.1
+faiss-cpu>=1.8.0.post1
+ollama>=0.3.3
+numpy>=1.26.4,<2.0.0
+torch>=2.3.0
+pytest>=8.3.0
