@@ -1,13 +1,123 @@
-# 🧠 DocuMind – Smart Document Q&A Assistant (Python Mac RAG + Android Companion)
+# 🧠 DocuMind – Smart Document Q&A Assistant
 
-This repository contains two complete, 100% local, zero-billing implementations of **DocuMind – Smart Document Q&A Assistant**:
+DocuMind is an AI-powered application that helps users upload PDF documents and ask questions about their content using Retrieval-Augmented Generation (RAG).
 
-1. **`/python_rag/` (MacBook Python + Streamlit + PyMuPDF + SentenceTransformers + FAISS + Ollama)**:
-   - `python_rag/app.py`: Full Streamlit web interface with multi-PDF upload, chat history, source citations, chunk/vector inspector, and Light/Dark styling.
-   - `python_rag/rag_engine.py`: Complete 7-stage local RAG engine using `PyMuPDF (fitz)`, sentence-aware overlapping chunking, `sentence-transformers` (`all-MiniLM-L6-v2`), `faiss-cpu` (`IndexFlatIP`), and `ollama`.
-   - `python_rag/requirements.txt`: Exact Python dependencies for macOS.
-   - `python_rag/test_rag.py`: Automated `pytest` suite verifying extraction, chunking, FAISS search, and out-of-context guardrails.
-   - `python_rag/README.md`: Detailed Mac setup instructions, Ollama setup guide, and Beginner AI Engineer walkthrough.
+## 🎯 Project Objective
 
-2. **`/app/` (Native Android Companion App for Live Preview & Local RAG Testing)**:
-   - Runs directly in the AI Studio Android Emulator with real PDF upload & page-preserving extraction, overlapping text chunking, local 384-d vector indexing in Room SQLite, live Ollama HTTP client + grounded extractive fallback, interactive RAG Pipeline Visualizer for beginner AI Engineers, and a built-in **Python & Mac Code Studio** tab where you can inspect and copy every Python file!
+The goal of this project is to make document understanding easier by using AI to retrieve relevant information and generate answers from uploaded PDFs.
+
+## ✨ Features
+
+- Upload multiple PDF documents.
+- Extract text from PDF files.
+- Split text into smaller chunks.
+- Generate text embeddings.
+- Retrieve relevant information using vector search.
+- Ask questions about uploaded documents.
+- Generate answers using a local AI model.
+- Display source references and page numbers.
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Backend development |
+| Streamlit | User interface |
+| PyMuPDF | PDF text extraction |
+| Sentence Transformers | Text embeddings |
+| FAISS | Vector search |
+| Ollama | Local AI model execution |
+| Llama 3.2 | Answer generation |
+
+## 📂 Project Structure
+
+```text
+DocuMind-RAG/
+│
+├── python_rag/
+│   ├── app.py
+│   ├── rag_engine.py
+│   ├── requirements.txt
+│   ├── test_rag.py
+│   └── README.md
+│
+└── app/
+    └── Android Companion Application
+```
+
+## ⚙️ Installation and Setup
+
+**1. Install the required software**
+
+- Python 3.10–3.12
+- Ollama
+- VS Code
+
+**2. Download the AI model**
+
+```bash
+ollama pull llama3.2:1b
+```
+
+**3. Navigate to the project folder**
+
+```bash
+cd python_rag
+```
+
+**4. Create a virtual environment**
+
+```bash
+python3 -m venv .venv
+```
+
+**5. Activate the environment**
+
+```bash
+source .venv/bin/activate
+```
+
+**6. Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+## ▶️ Run the Application
+
+Start Ollama and execute:
+
+```bash
+streamlit run app.py
+```
+
+Open the local application in your browser:
+
+```text
+http://localhost:8501
+```
+
+## 🧪 Testing
+
+Run the test suite:
+
+```bash
+pytest test_rag.py -v
+```
+
+## 📚 Learning Outcomes
+
+- Understanding Retrieval-Augmented Generation (RAG).
+- PDF processing and text extraction.
+- Text chunking and embeddings.
+- Vector databases and semantic search.
+- Working with Large Language Models (LLMs).
+- Building local AI applications using Python.
+
+## 👨‍💻 Developer
+
+**Samson Endeti**
+
+B.Tech – Computer Science and Engineering
+
+GitHub: [
